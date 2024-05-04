@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nishimuraya</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <header>
+      <div class="tel">
+        <span class="tag">ご予約時、ホームページを見たとお伝えください</span>
+        <p class="number">043-264-3939</p>
+      </div>
+      <div class="logo">
+        <%= link_to root_path do %>
+          <%= image_tag 'logo.jpg', size: "450x200" %>
+        <% end %>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li class="nav-list-item">
+            <%= link_to "Home", root_path %>
+          </li>
+          <li class="nav-list-item">
+            <%= link_to "地産地消", menu_about_path %>
+          </li>
+          <li class="nav-list-item">
+            <%= link_to "お料理", menu_dish_path %>
+          </li>
+          <li class="nav-list-item">
+            <%= link_to "お飲み物", menu_drink_path %>
+          </li>
+          <li class="nav-list-item">
+            <%= link_to "コース", menu_course_path %>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <%= yield %>
+    </main>
+    <footer>
+      <div class="logo">
+        <%= image_tag 'logo.jpg', size: "450x200" %>
+      </div>
+      <p class="number-1">TEL:043-264-3939</p>
+      <div class="footer-bar">
+        <ul class="footer-left">
+          <strong>
+            <li class=footer-list-1>住所</li>
+            <li class=footer-list-2>営業時間</li>
+            <li class=footer-list-3>定休日</li>
+            <li>カード可</li>
+          </strong>
+        </ul>
+        <ul class="footer-right">
+          <li class=footer-add>〒260-0834<br>
+             千葉県千葉市中央区今井2-12-15</li>
+          <li class=footer-add>ランチ　11:30〜14:00（平日、水木金、他日は予約制）<br>
+             ディナー　17:30～22:00<br>
+            （火金土23:00まで）<br>
+             17:30～22:00（日・祝）</li>
+          <li class=footer-add>月曜日</li>
+          <li class=footer-add>（VISA、MASTER）</li>
+        </ul>
+      </div>
+      <p class="copyright">🄫 2024 Copyright ニシムラヤ.</p>
+    </footer>
+  </body>
+</html>

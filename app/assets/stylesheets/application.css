@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+header a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+header {
+  background-image: url(bg_header.jpg);
+  color: #ffffff;
+}
+
+.tel {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 340px;
+}
+
+.tag {
+  color: #ffffff;
+  font-size: 12px;
+  background-color: rgba(0,0,0,0.3);
+  padding: 6px 20px 4px;
+  border: 1px solid #ffffff;
+  text-shadow: 0px 0px 9px #000;
+}
+
+.number {
+  color: #ffffff;
+  font-size: 43px;
+  padding-top: 5px;
+}
+
+.logo {
+  text-align: center;
+  padding: 50px 0px 30px;
+}
+
+.nav-list{
+  text-align: center;
+  padding-left: 15px;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  font-size: 30px;
+  padding: 0px 50px 30px;
+  text-shadow: 0px 0px 9px rgb(195,241,10);
+}
+/*ヘッダーここまで*/
+
+main {
+  background-image: url(bg_html.png);
+}
+
+main a{
+  text-decoration: none;
+  background-color: #dcdcdc;
+}
+
+/*トップページ*/
+
+.concept-visual {
+  background-image: url(bg_index_contents1.jpg);
+  background-position: top center;
+  text-align: center;
+  padding: 250px 0px 200px;
+}
+
+.concept-text {
+  color: black;
+  font-size: 20px;
+}
+
+.news {
+  text-align: center;
+  margin-top: 150px;
+}
+.news-header {
+  font-size: 50px;
+  color: black;
+}
+
+.news-nav {
+  display: inline-block;
+  font-size: 40px;
+  border-bottom: 1px solid;
+}
+
+.news-nav td {
+  color: black;
+  padding: 0px 40px;
+}
+
+/*トップページここまで*/
+
+/*ニュース*/
+
+.new-news {
+  text-align: center;
+  padding: 40px 0px 100px;
+}
+/*メインここまで*/
+footer {
+  background-image: url(bg_header.jpg);
+  color: #ffffff;
+}
+
+.footer-bar {
+  display: flex;
+  justify-content: center;
+  padding-left: 60px;
+}
+
+.number-1 {
+  text-align: center;
+  font-size: 43px;
+  padding-bottom: 20px;
+}
+
+.footer-left {
+  text-align: center;
+  padding: 5px 20px 5px 0px;
+  list-style: none;
+}
+
+.footer-list-1 {
+  padding-bottom: 33px;
+}
+
+.footer-list-2 {
+  padding-bottom: 78px;
+}
+
+.footer-list-3 {
+  padding-bottom: 11px;
+}
+
+.footer-add {
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+.copyright {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0 80px;
+}

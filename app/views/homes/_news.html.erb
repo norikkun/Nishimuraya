@@ -1,0 +1,18 @@
+<div class="news">
+  <h1 class="news-header">新着情報</h1>
+    <p>
+      <%= link_to "新規投稿ページ", new_home_path %>
+    </p>
+    <% news.each do |news| %>
+      <table class="news-nav">
+        <tr>
+          <th></th>
+          <th></th>
+        </tr>
+          <tr>
+            <td><%= news.day %></td>
+            <td><%= news.info %></td>
+          </tr>
+      </table><br>
+    <% end %>
+</div>
